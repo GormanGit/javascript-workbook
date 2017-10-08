@@ -4,7 +4,7 @@
 // Date: 10/04/17
 //
 
-//resolving conflicts
+
 'use strict';
 
 
