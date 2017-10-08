@@ -9,11 +9,18 @@ const rl = readline.createInterface({
 
 
 function rockPaperScissors(hand1, hand2) {
-
+//check for a tie
+ if(hand1 === hand2){
+  return '\x1b[7m,\x1b[31m Its a Tie\n You need to redo the turn! \x1b[0m';
   // Write code here
-
+ }else if(hand1 === 'rock' && hand2 === 'scissors' || hand1 === 'paper' && hand2 === 'rock' || hand1 === 'scissors' && hand2 === 'paper'){
+     return ''
+ }else if (hand1 === 'rock' && hand2 === 'paper' || hand1 === 'paper' && hand2 === 'scissors' || hand1 === 'scissors' && hand2 === 'rock'){
+     return
+ }else if (hand1 && hand2 !== 'rock', 'paper', 'scissors'){
+     return "Your tryig to play a different game!"
+ }
 }
-
 function getPrompt() {
   rl.question('hand1: ', (answer1) => {
     rl.question('hand2: ', (answer2) => {
