@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="88df4f3e-2a9d-4ac9-a447-298f51cadcf2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01week/datatypes.js" afterPath="$PROJECT_DIR$/01week/datatypes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/01week/rockPaperScissors.js" afterPath="$PROJECT_DIR$/01week/rockPaperScissors.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="datatypes.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/01week/datatypes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2280">
-              <caret line="114" column="12" lean-forward="true" selection-start-line="114" selection-start-column="12" selection-end-line="114" selection-end-column="12" />
+            <state relative-caret-position="-1520">
+              <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -70,7 +69,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="418" />
     <option name="y" value="141" />
     <option name="width" value="1400" />
@@ -171,15 +170,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1507254634169</updated>
-      <workItem from="1507254811281" duration="14832000" />
+      <workItem from="1507254811281" duration="15100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14832000" />
+    <option name="totallyTimeSpent" value="15100000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="418" y="141" width="1400" height="1020" extended-state="1" />
+    <frame x="418" y="141" width="1400" height="1020" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -222,8 +221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01week/datatypes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2280">
-          <caret line="114" column="12" lean-forward="true" selection-start-line="114" selection-start-column="12" selection-end-line="114" selection-end-column="12" />
+        <state relative-caret-position="-1520">
+          <caret line="53" column="23" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

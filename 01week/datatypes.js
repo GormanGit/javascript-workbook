@@ -16,13 +16,13 @@
 //return the variable of the added date and time.
 
 
-// function dayAndTime(){
-//   var date = new Date();
-//   var n  = date.toDateString();
-//   var time = date.toLocaleTimeString();
-//   return date + ' ' + n + time;
-//
-// } dayAndTime();
+function dayAndTime(){
+  var date = new Date();
+  var n  = date.toDateString();
+  var time = date.toLocaleTimeString();
+  return date + ' ' + n + time;
+
+} dayAndTime();
 
 //_____________________________________________________
 
@@ -45,12 +45,12 @@ numStr();
 //write a variable the turns the string to a number with parseInt().
 //console.log the variable that used parseInt.
 
-// function strNum(){
-//     var str = "27";
-//     var a = parseInt(str);
-//     return a + a
-// }
-// strNum();
+function strNum(){
+    var str = "27";
+    var a = parseInt(str);
+    return a + a
+}
+strNum();
 //______________________________________________________
 
 //****Write a JavaScript program that takes in different datatypes and prints out whether they are a:
