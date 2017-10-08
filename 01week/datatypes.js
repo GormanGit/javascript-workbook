@@ -2,9 +2,9 @@
 // Class: 211 Java Tue/Thur
 // Instructor: Renee Dudley
 // Date: 10/04/17
-//
 
 
+//Please let me know what to fix if its not too late. :)
 'use strict';
 
 
