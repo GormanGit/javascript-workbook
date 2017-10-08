@@ -31,9 +31,10 @@ function dayAndTime(){
 //create a variable that is number.numToString();
 //console.log the variable that equals .numToString;
 //varify by adding the strings to get a souble string;
-var number = 27;
-var a = number.toString();
+
 function numStr(){
+    var number = 27;
+    var a = number.toString();
   return a + a
 }
 numStr();
@@ -101,15 +102,16 @@ adding(7, 7);
 //use blank else statement so the function sudo-stops.
 //call the function
 //
-var pizza = true;
-var beer = true;
+
 var happiness = function(){
+    var pizza = true;
+    var beer = true;
     if(pizza && beer === true){
         console.log('True');
     }
     else {
 
-       // console.log("False");
+
     }
 };
 happiness();
@@ -123,16 +125,17 @@ happiness();
 //use blank else statement so the function sudo-stops.
 //call the function
 
-var pizza = false;
-var beer = true;
+
 function kindaHappiness(){
+    var pizza = false;
+    var beer = true;
     if(pizza || beer === true){
         console.log('True');
 
     }
     else {
 
-//console.log("False");
+
     }
 };
 kindaHappiness();
@@ -145,11 +148,12 @@ kindaHappiness();
 //use an if statement telling program what to console.log('true') if either of the varaibles are true
 //use blank else statement so the function sudo-stops.
 //call the function
-//blablablabla
 
-var pizza = 1;
-var beer = 1;
+
+
 function epicSadness(){
+    var pizza = 1;
+    var beer = 1;
     if(pizza && beer !== true){
         console.log('False');
 
