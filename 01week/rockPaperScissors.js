@@ -1,7 +1,19 @@
-'use strict';
+// Student: Jon Gorman
+// Class: 211 Java Tue/Thur
+// Instructor: Renee Dudley
+// Date: 10/10/17
 
+//White Boarding
+
+//Create a function for the game.
+//Function should include a way to check for a tie
+//function should include a way to check for win with player1
+//Function should have a way to check for a win with player2
+//function should have a way to check that game is played correctly i.e.(no use of words other tha those needed for game
+
+'use strict'
 const assert = require('assert');
-const readline = require('readline');
+const readline = require('readline');``
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
@@ -11,14 +23,14 @@ const rl = readline.createInterface({
 function rockPaperScissors(hand1, hand2) {
 //check for a tie
  if(hand1 === hand2){
-  return '\x1b[7m,\x1b[31m Its a Tie\n You need to redo the turn! \x1b[0m';
+  return '\x1b[31mIts a Tie\nYou need to redo the turn! \x1b[0m';
   // Write code here
  }else if(hand1 === 'rock' && hand2 === 'scissors' || hand1 === 'paper' && hand2 === 'rock' || hand1 === 'scissors' && hand2 === 'paper'){
-     return ''
+     return '\x1b[32mHand1 has won this round! \x1b[0m'
  }else if (hand1 === 'rock' && hand2 === 'paper' || hand1 === 'paper' && hand2 === 'scissors' || hand1 === 'scissors' && hand2 === 'rock'){
-     return
+     return '\x1b[34mHand2 has won this round! \x1b[0m'
  }else if (hand1 && hand2 !== 'rock', 'paper', 'scissors'){
-     return "Your tryig to play a different game!"
+     return '\x1b[4mYour tryig to play a different game! \x1b[0m'
  }
 }
 function getPrompt() {
