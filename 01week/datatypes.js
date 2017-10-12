@@ -2,6 +2,7 @@
 // Class: 211 Java Tue/Thur
 // Instructor: Renee Dudley
 // Date: 10/04/17
+//Revision Date: 10/11/17
 
 
 //Please let me know what to fix if its not too late. :)
@@ -15,14 +16,12 @@
 // variable that adds the day and the time.
 //return the variable of the added date and time.
 
-
-function dayAndTime(){
-  var date = new Date();
-  var n  = date.toDateString();
-  var time = date.toLocaleTimeString();
-  return date + ' ' + n + time;
-
-} dayAndTime();
+const dayAndTime = () => {
+    let date = new Date();
+    let n = date.toDateString();
+    let time = date.toLocaleTimeString();
+    return date + '' + time;
+};  dayAndTime();
 
 //_____________________________________________________
 
@@ -32,26 +31,21 @@ function dayAndTime(){
 //console.log the variable that equals .numToString;
 //varify by adding the strings to get a souble string;
 
-function numStr(){
-    var number = 27;
-    var a = number.toString();
-  return a + a
-}
-numStr();
+const numStr = (peach) => {
+   return peach.toString();
+}; numStr(444);
 
-// //______________________________________________________
+// ______________________________________________________
 
 //****Write a JavaScript program to convert a string to the number.
 //write a variable that is a string.
 //write a variable the turns the string to a number with parseInt().
 //console.log the variable that used parseInt.
 
-function strNum(){
-    var str = "27";
-    var a = parseInt(str);
-    return a + a
-}
-strNum();
+const strNum = () => {
+    return parseInt('777');
+};  strNum();
+
 //______________________________________________________
 
 //****Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -63,16 +57,10 @@ strNum();
 //String
 //Use console.log(typeof...) for each one of the operators
 
-function typOf(){
-    var a = true;
-    var b = null;
-    var c = 7/0;
-    var d = 27;
-    var e = Math.sqrt(-1);
-    var f = "Im having Fun";
-    return [typeof a, b, c, d, e, typeof f]
-};
-typOf();
+const returnType = () => {
+    return [typeof true, typeof 0/0, typeof null, typeof a, typeof 27, typeof 's-tring', 7/0, ];
+};  returnType();
+
 //________________________________________________________
 
 //****Write a JavaScript program that adds 2 numbers together.
@@ -80,18 +68,10 @@ typOf();
 //write another variable that equals another number.
 //console.log the addition of both variables
 
-// function adding() {
-//     var a = 7;
-//     var b = 7;
-//     return a + b
-// } adding();
-
 const adding = (a, b) =>{
-    // a = 7;
-    // b = 7;
     return a + b
-}
-adding(7, 7);
+};  adding(7, 7);
+
 // __________________________________________________________
 
 //****Write a JavaScript program that runs only when 2 things are true.
@@ -103,18 +83,12 @@ adding(7, 7);
 //call the function
 //
 
-var happiness = function(){
-    var pizza = true;
-    var beer = true;
-    if(pizza && beer === true){
-        console.log('True');
-    }
-    else {
+const happiness = (pizza, beer) => {
+  if(pizza === 'hot' && beer === 'cold'){
+    return true;
+  }
+};  happiness('hot', 'cold');
 
-
-    }
-};
-happiness();
 //________________________________________________________________
 
 //****Write a JavaScript program that runs when 1 of 2 things are true.
@@ -125,20 +99,12 @@ happiness();
 //use blank else statement so the function sudo-stops.
 //call the function
 
+const kindaHappy = (pizza, beer) => {
+  if(pizza === 'hot' || beer === 'cold'){
+    return true;
+  }
+};  kindaHappy('roomTemp', 'cold');
 
-function kindaHappiness(){
-    var pizza = false;
-    var beer = true;
-    if(pizza || beer === true){
-        console.log('True');
-
-    }
-    else {
-
-
-    }
-};
-kindaHappiness();
 //__________________________________________________________
 
 //Write a JavaScript program that runs when both things are not true
@@ -149,18 +115,8 @@ kindaHappiness();
 //use blank else statement so the function sudo-stops.
 //call the function
 
-
-
-function epicSadness(){
-    var pizza = 1;
-    var beer = 1;
-    if(pizza && beer !== true){
-        console.log('False');
-
-    }
-    else {
-
-//console.log("False");
-    }
-};
-epicSadness();
+const sadness = (pizza, beer) => {
+  if(pizza !== 'hot' && beer !== 'cold'){
+    return true;
+  }
+};  sadness('cold', 'hot');
