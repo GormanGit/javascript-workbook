@@ -1,7 +1,8 @@
 //student:Jon Gorman
 //Assignment: Tests in rockPaperScissors
 //Instructor: Reneee Dudley
-//Date: 10/13/2017
+//Date: 10/13/2017new change test
+//
 'use strict';
 
 const assert = require('assert');
