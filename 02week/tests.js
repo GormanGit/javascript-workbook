@@ -28,7 +28,7 @@ function rockPaperScissors(a, b) {
         //Check for player two win
     } else if (hand1 === 'rock' && hand2 === 'paper' || hand1 === 'paper' && hand2 === 'scissors' || hand1 === 'scissors' && hand2 === 'rock') {
         return "Hand two wins!"
-    }else if (hand1 && hand2 !== 'rock', 'paper', 'scissors'){
+    }else {
     return "You are not playing the game right!"
 }
 }
@@ -65,7 +65,9 @@ if (typeof describe === 'function') {
             assert.equal(rockPaperScissors('rock ', 'sCiSsOrs'), "Hand one wins!");
         });
         it('shoulde check for unassigned words', () => {
-            assert.notEqual(rockPaperScissors('rock, paper, scissors', 'rock, paper, scissors'), "You are not playing the game right!");
+            assert.equal(rockPaperScissors('rock', 'pippir'), "You are not playing the game right!");
+            assert.equal(rockPaperScissors('roiok', 'paper'), "You are not playing the game right!");
+            assert.equal(rockPaperScissors('roiock', 'pippir'), "You are not playing the game right!");
         });
     });
 } else {
