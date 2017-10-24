@@ -67,7 +67,7 @@ if (typeof describe === 'function') {
         it('shoulde check for unassigned words', () => {
             assert.equal(rockPaperScissors('rock', 'pippir'), "You are not playing the game right!");
             assert.equal(rockPaperScissors('roiok', 'paper'), "You are not playing the game right!");
-            assert.equal(rockPaperScissors('roiock', 'pippir'), "You are not playing the game right!");
+            assert.equal(rockPaperScissors('roiock', 'poppir'), "You are not playing the game right!");
         });
     });
 } else {
