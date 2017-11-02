@@ -2,6 +2,12 @@
 
 let assert = require('assert');
 
+let jobTypes = {
+  pilot: 'MAV',
+  mechanic: 'Repair Ship',
+  commander: 'Main Ship',
+  programmer: 'Any Ship!'
+};
 // Your code here
 class CrewMember {
   constructor(name, job, specialSkill, ship){
@@ -10,7 +16,7 @@ class CrewMember {
     this.specialSkill = specialSkill;
     this.ship = ship;
   }
-enterShip() {
+enterShip(ship) {
   this.ship = ship;
   ship.crew.push(this);
 }
@@ -23,10 +29,10 @@ class Ship {
     this.crew = [];
   }
 missionStatement() {
-  if (this.crew.lenght){
-    return this.ability;
+  if (this.crew.length < 1 ){
+      return "Can't perform a mission yet.";
   }else {
-    return `Can't perform a mission yet.`;
+      return this.ability;
   }
 }
 
