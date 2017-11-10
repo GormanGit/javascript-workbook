@@ -2,18 +2,45 @@
 
 const assert = require('assert');
 
-function forEach(arr, callback) {
-  // Your code here
-}
 
-function map(arr, callback) {
-  // Your code here
-}
-
-function filter(arr, callback) {
-  // Your code here
-}
-
+// function forEach(arr, callback){
+const forEach = (inputArray, inputFunction) => {
+  const anotherArr = [];
+  for (let i = 0; i < inputArray.length; i++){
+    anotherArr.push(inputFunction(inputArray[i]));
+    console.log(inputArray.length)
+  }
+    // return anotherArr;
+};
+const fullArray = [1, 2, 3];
+const inputFunction = i => fullArray.length;
+forEach(fullArray, inputFunction);
+// function map(arr, callback) {
+//
+// }
+const map = (arg1, arg2) => {
+  let nums = [];
+  arg1.forEach(index => nums.push(arg2(index)));
+  return nums;
+};
+const add2 = i => i+2;
+const array = [1, 2, 3, 4];
+map(array, add2);
+// function filter(arr, callback) {
+//   // Your code here
+// }
+const filter = (inpt , inFun) => {
+    let arr1 = [];
+    for (let i = 0; i < inpt.length; i++){
+        if(inFun(inpt[i])) {
+            arr1.push(inpt[i]);
+        }
+    }return arr1;
+};
+const filtArray = [1,2,3,4];
+filter(filtArray, (x) => {
+    return x > 2;
+});
 function some(arr, callback) {
   // Your code here
 }
