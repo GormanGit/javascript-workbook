@@ -1,13 +1,21 @@
 'use strict';
 
+
 class TicTacToe extends React.Component {
   constructor(props) {
     super(props);
   }
-
+  handleClick(){
+      this.playerTurn = 'X';
+      this.changePlayer = () => {
+          this.playerTurn=this.playerTurn ==='X' ? 'O' : 'X'
+      };
+      console.log("PlayerTurn");
+  }
   render() {
     return (
-      <div>
+      <div onClick={() => this.handleClick()}className="row">
+
         <div className="row">
           <div data-cell="0"></div>
           <div data-cell="1"></div>
@@ -23,6 +31,7 @@ class TicTacToe extends React.Component {
           <div data-cell="7"></div>
           <div data-cell="8"></div>
         </div>
+
       </div>
     );
   }
