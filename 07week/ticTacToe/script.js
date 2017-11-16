@@ -4,11 +4,15 @@
 class TicTacToe extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+        playerTurn = 'X' //if in state no need for this....
+    };
   }
+
   handleClick(){
-      this.playerTurn = 'X';
+
       this.changePlayer = () => {
-          this.playerTurn=this.playerTurn ==='X' ? 'O' : 'X'
+          this.playerTurn = this.playerTurn ==='X' ? 'O' : 'X'
       };
       console.log("PlayerTurn");
   }
