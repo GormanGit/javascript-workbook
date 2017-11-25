@@ -17,18 +17,24 @@ class TicTacToe extends React.Component {
       squares: [
         "", "", "", "", "", "", "", "", ""
       ],
-
+     xNext: true,
     };
   }
 
   handleClick(i){
 
     const squares = this.state.squares.slice();
-    squares[i] = 'X';
-    this.setState({squares: squares})
+    if(calculateWin(squares) || squares[i]) {
+        return;
+    }
+    squares[i] = this.state.xNext ? 'X' : 'O';
+    this.setState({
+      squares: squares,
+      xNext: !this.state.xNext,
+    })
     // this.playerTurn = this.playerTurn === 'X' ? 'O' : 'X'
     // return div[data-cell] = playerTurn
-    console.log(this.renderSquare(0));
+    // console.log(this.renderSquare());
   }
   renderSquare(i) {
     return (
@@ -39,8 +45,17 @@ class TicTacToe extends React.Component {
     );
   }
   render() {
+      const winner = calculateWin(this.state.squares);
+      let status;
+      if(winner) {
+          status = 'Winner: ' + winner;
+      } else {
+          status = 'Next Player: ' + (this.state.xNext ? 'X' : 'O');
+      }
+
     return (
         <div>
+            <div className="status">{status}</div>
         <div className="row">
            {/*<div data-cell="0"></div>*/}
             {this.renderSquare(0)}
@@ -74,3 +89,23 @@ class TicTacToe extends React.Component {
 }
 
 ReactDOM.render(<TicTacToe />, document.getElementById('tic-tac-toe'));
+
+function calculateWin(squares){
+  const lines = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [6, 4, 2],
+    ];
+  for(let i = 0; i <lines.length; i ++) {
+     const [a, b, c] = lines[i];
+     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+         return squares[a];
+     }
+ }
+  return null;
+}
