@@ -4,17 +4,29 @@ const assert = require('assert');
 
 
 // function forEach(arr, callback){
+// ** method
+// var arr1 = [1, 2, 3,]
+// arr1.forEach(function(entry){
+//   console.log(entry)
+// })
+
+// this is forEach function that iterates over each item in array with defined function. for each item
+// in array dot length perform inputfunction
 const forEach = (inputArray, inputFunction) => {
-  const anotherArr = [];
-  for (let i = 0; i < inputArray.length; i++){
-    anotherArr.push(inputFunction(inputArray[i]));
-    console.log(inputArray.length)
-  }
-    // return anotherArr;
+    for (let i = 0; i < inputArray.length; i++){
+        inputFunction(inputArray[i]);
+
+    }
 };
+//this is the array
 const fullArray = [1, 2, 3];
-const inputFunction = i => fullArray.length;
-forEach(fullArray, inputFunction);
+// this is a function that uses fullArray as the argument and then console logs it as the function.
+function funky(fullArray) {
+    console.log(fullArray);
+}
+//calling fullArray and funky to run the forEach function logs the exact same thing as a forEach method
+forEach(fullArray, funky);
+
 // function map(arr, callback) {
 //
 // }
