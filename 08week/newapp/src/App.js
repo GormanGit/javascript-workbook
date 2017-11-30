@@ -15,8 +15,9 @@ class App extends Component {
 
   render() {
     return (
-      //  this is a semantic-ui-reactcontainer that auto margins
-      <div>
+      //  this is a semantic-ui-react also semantic-ui-css container that auto margins
+      <div className="ui container">
+
            {/*forwardslash "/" signifies the home or homepage for the path */}
         <Route path="/" exact component={HomePage} />
           {/*this must start with a forward slash as it signifies the homepage starting point

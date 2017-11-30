@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import 'semantic-ui-css/semantic.min.css';
 
 
 ReactDOM.render(<MuiThemeProvider>
