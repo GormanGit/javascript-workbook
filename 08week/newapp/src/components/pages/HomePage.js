@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import RaisedButton from 'material-ui/RaisedButton';
+// import RaisedButton from 'material-ui/RaisedButton';
+// import FontIcon from 'material-ui/FontIcon';
 
 const HomePage = () => (
     <div>
 <h1>Home Page</h1>
-        <RaisedButton label="Primary" primary={true} />
-        <Link to="login">Login</Link>
+
+        <Link to='login'>Login</Link>
+
     </div>
 );
 
