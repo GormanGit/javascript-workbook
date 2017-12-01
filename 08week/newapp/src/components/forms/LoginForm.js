@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Form } from 'semantic-ui-react';
 import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
+
 
 class LoginForm extends React.Component {
     state = {
@@ -39,7 +41,10 @@ class LoginForm extends React.Component {
                     onChange={this.onChange}
                 /><br />
 
-             <RaisedButton label='Login' primary={true} />
+             <RaisedButton primary={true}>
+             <Link to='main'>LOGIN</Link>
+             </RaisedButton>
+
                 <br />
 
             </Form>
