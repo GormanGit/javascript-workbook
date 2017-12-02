@@ -1,6 +1,9 @@
 //
 // https://blog.hellojs.org/fetching-api-data-with-react-js-460fe8bbf8f2
 import React, { Component } from 'react';
+import 'semantic-ui-css/semantic.min.css';
+import logo from './logo.svg';
+
 
 import './App.css';
 
@@ -16,7 +19,7 @@ class Background extends Component {
 
 componentDidMount(){
   //this is the fetch + api call
-  fetch('https://randomuser.me/api/?results=500')
+  fetch('https://randomuser.me/api/?results=144')
   .then(results => {
       return results.json();
     }).then(data => {
@@ -36,9 +39,12 @@ componentDidMount(){
   //render the data
   render() {
     return (
-      <div className="container2">
-      <div className="container1">
+
+      <div className="App-logo" >
+      <div className="Pics" >
+      {/*<div className="App-logo">*/}
           {this.state.pictures}
+      {/*</div>*/}
       </div>
       </div>
     );
