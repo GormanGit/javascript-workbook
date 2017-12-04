@@ -1,7 +1,12 @@
 .App {
   text-align: center;
 }
-
+.pic{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -100px;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;

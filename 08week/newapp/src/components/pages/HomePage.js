@@ -10,7 +10,7 @@ const HomePage = () => (
         <Link to='login'>LOGIN PAGE</Link>
 
 </RaisedButton>
-        <Link to='main'>LOGIN PAGE</Link>
+        {/*<Link to='main'>LOGIN PAGE</Link>*/}
     </div>
 );
 
