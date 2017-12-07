@@ -6,8 +6,16 @@
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
-.ui-container {
-  margin-left: 30px;
+.head {
+/*display: flex;*/
+  /*width: 600px;*/
+  height: 200px;
+  /*margin-right: 250px;*/
+  background-image: url('https://hn.algolia.com/assets/logo-hn-search.png');
+  /*padding-left: 100px;*/
+  margin-left: 135px;
+  margin-right: 160px;
+  /*color:#935b38;*/
 }
 .App-header {
   background-color: #222;
