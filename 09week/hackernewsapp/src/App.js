@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'semantic-ui-css/semantic.min.css';
 
+
 import './App.css';
 
 
@@ -68,16 +69,15 @@ componentDidMount() {
     //     })
     // }
     render() {
-        return (
-            <div>
-                {/*<div>*/}
-            {/*<h1 className="">*/}
+        const imgStyle = {
+            backgroundImage: "src("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWAAAACPCAMAAADz2vGdAAAAeFBMVEX/ZgD/////YgD/XAD/XwD/kFb/8+r/zrb/+fP/xav/kl7/fjj/9O7/WgD/agD/0L3/2c3/4tT/28v/yrH/spX/v6j/vZ//uZj/jVz/6dv/1sP/mmr/nXD/upb/rIz/TwD/eCn/pHj/qX//rob/j1T/gj7/iFL/u6OX8hgcAAACTklEQVR4nO3cXW+bMBSAYWK8BrY53dolLh9dmq7r/v8/nG1YQ9jN8ZGsKNL7XJ0QLtAbZCERqCoAAAAAAAAAAAAAAAAAAAAAAAAAAIAbYvSufei34e2T1m8KC5hmo3VfX/vgb4G5UwfeEliAwIWlwF+zNQQWSoHfnM3jWgILpcCfc68HagJLEbgwAhdG4MIIXBiBC1sGts45O28O49SvPm+0540ElloEtoeu655TTPMaxhSwbsN0SCntrzC26XsCiy0C1/dhfJxa/gjjdxcm9xCmZv4BwvjNpV0JLCUKPO1AYA1Z4G0cCawhC7whsJYw8GAIrCMMHO9eEFhDGHjDGawkDRzWCAJrSAP3jsAq0sDNjsAq0sCb0RBYQxy4dwTW+C+wi3+KcpeBu1h4VxNYYR24f38K3tuLwPt4l350BFZYB144B/4Tv3k4ElhBFniIn1mDNUSB9y5dR3gC55MFPvZxeSawwjpwe3TB8efqDB5j8WcC5xNdB+9rEwPfETifLLB1/bxuEDiTMLAZCawjDFxVBNaRBv63RhA4kzSwGQisIl4idg2BNcSB5zWCwJnEgec1gsCZxIErQ2ANeeC6J7BCxhk8EFhhGbj/qJYCd5eBK0dghUVgM3rvh2l8Onj/ms7bk/eH+Q/aYfSn6bcgsNTyEQJjrZ2f1oijXW+0HyOBxXgIpjACF0bgwghcGIELmwLbzPdN8b4IsRT49CXTy5bAQryzpzACF0bgwkzXaD0SWGKnd+1DBwAAAAAAAAAAAAAAAAAAAAAAAAAAyPAXhtU6PxuBCbsAAAAASUVORK5CYII=")"
 
-                {/*<img class="ui fluid image" src="https://s3.amazonaws.com/GoRoost-Heroku/wp-content/uploads/2014/08/hacker-news.jpg" />*/}
-            {/*</h1>*/}
-                <img class="ui medium image centered" src="https://s3.amazonaws.com/GoRoost-Heroku/wp-content/uploads/2014/08/hacker-news.jpg" />
-                <div class="ui hidden divider">
+        };
+        return (
+            <div >
+                <div style={imgStyle}>
                 </div>
+
 
 
 
