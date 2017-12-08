@@ -3,8 +3,8 @@
 /*}*/
 
 .App-logo {
-  animation: App-Pics-spin infinite 20s linear;
-  height: 80px;
+  /*animation: App-Pics-spin infinite 20s linear;*/
+  /*height: 80px;*/
 }
 
 /*.App-header {*/
@@ -28,7 +28,7 @@
 }
 
 .Pics{
-
+  height: 180px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

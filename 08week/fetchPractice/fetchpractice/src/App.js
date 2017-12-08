@@ -19,16 +19,27 @@ class Background extends Component {
 
 componentDidMount(){
   //this is the fetch + api call
-  fetch('https://randomuser.me/api/?results=144')
+  fetch('https://randomuser.me/api/?results=7')
   .then(results => {
       return results.json();
     }).then(data => {
         let pictures = data.results.map((pic) => {
             return(
-                <div key={pic.results}>
-                   <img src={pic.picture.medium} />
-
+                <div class="ui card" key={pic.results}>
+                   <img class="ui large image" src={pic.picture.medium} />
+                    <div class="content">
+                        <div class="header">Matthew</div>
+                        <div class="meta">
+                            <span class="date">Joined in 2015</span>
+                        </div>
+                        <div class="description">Matthew is a musician living in Nashville.</div>
+                    </div>
+                    <div class="extra content">
+                        <a>
+                            <i aria-hidden="true" class="user icon"></i>22 Friends</a>
+                    </div>
                 </div>
+
 
             )
         })
@@ -40,6 +51,7 @@ componentDidMount(){
   render() {
     return (
 
+
       <div className="App-logo" >
       <div className="Pics" >
       {/*<div className="App-logo">*/}
@@ -47,6 +59,7 @@ componentDidMount(){
       {/*</div>*/}
       </div>
       </div>
+
     );
   }
 }
