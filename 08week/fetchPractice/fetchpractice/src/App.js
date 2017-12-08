@@ -25,8 +25,9 @@ componentDidMount(){
     }).then(data => {
         let pictures = data.results.map((pic) => {
             return(
+                <div>
                 <div class="ui card" key={pic.results}>
-                   <img class="ui large image" src={pic.picture.medium} />
+                   <img class="ui small image" src={pic.picture.medium} />
                     <div class="content">
                         <div class="header">Matthew</div>
                         <div class="meta">
@@ -38,6 +39,7 @@ componentDidMount(){
                         <a>
                             <i aria-hidden="true" class="user icon"></i>22 Friends</a>
                     </div>
+                </div>
                 </div>
 
 
