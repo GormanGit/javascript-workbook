@@ -27,12 +27,12 @@
   to { transform: rotate(360deg); }
 }
 
-.Pics{
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 25px;
+/*.Pics{*/
+  /*height: 180px;*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*flex-wrap: wrap;*/
+  /*margin: 25px;*/
 
   /*margin: 30px;*/
 }
