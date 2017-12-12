@@ -18,7 +18,7 @@ class LoginForm extends React.Component {
 //in state change data, use spread to save everything that is in data, then what is changed
 //which is an e.target
   onChange = e => this.setState({
-    data: {...this.state.data, [e.target.name]: e.target.value}
+    data: {...this.state.data, [e.target.dataset.name]: e.target.value}
   });
   onSubmit = () => {
   }
@@ -29,21 +29,19 @@ class LoginForm extends React.Component {
     return (
         <Form onSubmit={this.onSubmit}>
           <TextField
+              data-name="email"
               hintText="email"
               value={data.email}
-              onChange={this.onChange}
-
-          /><br/>
+              onChange={this.onChange}/>
+          <br/>
           <TextField
               hintText="password"
               value={data.password}
-              onChange={this.onChange}
-
-          /><br/>
+              onChange={this.onChange}/>
+          <br/>
           <RaisedButton primary={true}>
             <Link to='main'>LOGIN</Link>
           </RaisedButton>
-
           <br/>
         </Form>
     );

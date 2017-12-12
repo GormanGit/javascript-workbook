@@ -7,7 +7,6 @@ const HomePage = () => (
       <h1>Home Page</h1>
       <RaisedButton primary={true}>
         <Link to='login'>LOGIN PAGE</Link>
-
       </RaisedButton>
       {/*<Link to='main'>LOGIN PAGE</Link>*/}
     </div>
