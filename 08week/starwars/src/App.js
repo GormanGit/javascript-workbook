@@ -1,38 +1,20 @@
+
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route } from 'react-router-dom'
+import mainPage from "./Component/mainPage";
+import charInfo from "./Component/charInfo";
+// import logo from './logo.svg';
+// import './App.css';
+// // import './Component/infoButton'
+// import 'semantic-ui-css/semantic.min.css';
+// import { Button } from 'semantic-ui-react'
 
-class App extends Component {
-  constructor(){
-    super();
-    this.state ={
-    characters: null
-    }
-  }
-componentDidMount(){
-    const that = this;
-    fetch('https://swapi.co/api/people/')
-      .then((response) => response.json())
-      .then((responseJson) => {
-        that.setState({characters: responseJson.results})
-      })
-      .catch((error) => {
-      console.error(error)
-      })
-}
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
-
+const App = () => (
+  <div>
+<Route path="/" exact component={mainPage} />
+<Route path="/charInfo" exact component={charInfo} />
+</div>
+);
 export default App;
+
+
