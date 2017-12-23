@@ -7,7 +7,9 @@ import 'semantic-ui-css/semantic.min.css';
 import { Button } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
-class App extends Component {
+// import charInfo from './charInfo';
+
+export class mainApp extends Component {
   constructor(props){
     super(props);
     this.state ={
@@ -25,32 +27,21 @@ class App extends Component {
         console.error(error)
       })
   }
-  handleClick() {
-
+  handleClick(obj, key) {
+    // console.log(obj.height);
     this.state.characters.map((obj, key) => {
-      if(obj.name) {
-        return obj.height;
-
-    }
-
+        // return this.state.obj.height;
     })
-    // return (
-    //   this.state.characters.map((obj, key)=>{
-    //     return (
-    //       <div key={key}>
-    //         {obj.height}
-    //       </div>
-    //     )
-    //   })
-    // )
+
   }
   renderCharacters(){
     const {characters} = this.state;
     if(characters.length) {
       return characters.map((obj, key) =>{
         return <div key={key}>
-          <Button onClick={this.handleClick.bind(this)} basic color='orange'>
-            <Link onClick={this.handleClick} to="/charInfo"> {obj.name} </Link>
+          <Button onClick={this.handleClick()} basic color='orange'>
+            <Link onClick={()=>
+              this.handleClick()} to="/charInfo"> {obj.name} </Link>
           </Button>
         </div>
       })
@@ -74,4 +65,4 @@ class App extends Component {
 }
 
 
-export default App;
+export default mainApp;
