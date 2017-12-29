@@ -1,0 +1,33 @@
+.body {
+    display: flex;
+    justify-content: center;
+}
+.game {
+    margin-top: 0px;
+}
+
+.status {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.outerBoard{
+    display: flex;
+    justify-content: center;
+}
+.gameBoard {
+    height: 320px;
+    width: 318px;
+    margin-top: 0px;
+}
+.outerButton {
+    display: flex;
+    justify-content: center;
+}
+
+.boardButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 300px;
+    width: 200px;
+}
